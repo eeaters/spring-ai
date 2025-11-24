@@ -48,8 +48,8 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.reactive.function.client.WebClient;
 
 /**
- * Single class implementation of the DeepSeek Chat Completion API:
- * https://platform.deepseek.com/api-docs/api/create-chat-completion
+ * Single class implementation of the DeepSeek Chat Completion API: <a href=
+ * "https://platform.deepseek.com/api-docs/api/create-chat-completion">create-chat-completion</a>
  *
  * @author Geng Rong
  */
@@ -67,7 +67,7 @@ public class DeepSeekApi {
 
 	private final WebClient webClient;
 
-	private DeepSeekStreamFunctionCallingHelper chunkMerger = new DeepSeekStreamFunctionCallingHelper();
+	private final DeepSeekStreamFunctionCallingHelper chunkMerger = new DeepSeekStreamFunctionCallingHelper();
 
 	/**
 	 * Create a new chat completion api.
